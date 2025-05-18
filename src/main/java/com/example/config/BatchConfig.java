@@ -9,8 +9,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@EnableBatchProcessing
+@EnableBatchProcessing  // Å© Ç±Ç±ÇóLå¯Ç…Ç∑ÇÈ
+
 public class BatchConfig {
+
+    @Bean
+    public SampleTasklet sampleTasklet() {
+        return new SampleTasklet();
+    }
 
     @Bean
     public Job sampleJob(JobBuilderFactory jobBuilderFactory,
@@ -25,9 +31,9 @@ public class BatchConfig {
     }
 
     @Bean
-    public Step sampleStep(StepBuilderFactory stepBuilderFactory) {
+    public Step sampleStep(StepBuilderFactory stepBuilderFactory, SampleTasklet sampleTasklet) {
         return stepBuilderFactory.get("sampleStep")
-                .tasklet(new SampleTasklet())
+                .tasklet(sampleTasklet)
                 .build();
     }
 
