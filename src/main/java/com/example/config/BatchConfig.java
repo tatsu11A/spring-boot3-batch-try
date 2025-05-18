@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@EnableBatchProcessing  // © ‚±‚±‚ğ—LŒø‚É‚·‚é
+@EnableBatchProcessing  // â† ã“ã“ã‚’æœ‰åŠ¹ã«ã™ã‚‹
 
 public class BatchConfig {
 

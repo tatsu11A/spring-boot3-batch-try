@@ -7,11 +7,11 @@ public class JobCompletionNotificationListener implements JobExecutionListener {
 
     @Override
     public void beforeJob(JobExecution jobExecution) {
-        System.out.println("=== ÉWÉáÉuäJén: " + jobExecution.getJobInstance().getJobName() + " ===");
+        System.out.println("=== „Ç∏„Éß„ÉñÈñãÂßã: " + jobExecution.getJobInstance().getJobName() + " ===");
     }
 
     @Override
     public void afterJob(JobExecution jobExecution) {
-        System.out.println("=== ÉWÉáÉuèIóπ: " + jobExecution.getStatus() + " ===");
+        System.out.println("=== „Ç∏„Éß„ÉñÁµÇ‰∫Ü: " + jobExecution.getStatus() + " ===");
     }
 }

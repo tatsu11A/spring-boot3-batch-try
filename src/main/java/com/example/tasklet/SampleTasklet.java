@@ -8,7 +8,7 @@ import org.springframework.batch.repeat.RepeatStatus;
 public class SampleTasklet implements Tasklet {
     @Override
     public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) {
-        System.out.println(">> SampleTasklet ŽÀs’†...");
+        System.out.println(">> SampleTasklet å®Ÿè¡Œä¸­...");
         return RepeatStatus.FINISHED;
     }
 }

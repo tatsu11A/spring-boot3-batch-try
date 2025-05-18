@@ -10,6 +10,6 @@ import java.util.List;
 public class UsersWriter implements ItemWriter<Users> {
     @Override
     public void write(List<? extends Users> items) {
-        items.forEach(user -> System.out.println("‘‚«‚İ: " + user.getName()));
+        items.forEach(user -> System.out.println("æ›¸ãè¾¼ã¿: " + user.getName()));
     }
 }
