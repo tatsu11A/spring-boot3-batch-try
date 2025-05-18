@@ -1,13 +1,13 @@
-package com.example.demo;
+package com.example.springboot3batchtry;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication {
+public class SpringBoot3BatchTryApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(SpringBoot3BatchTryApplication.class, args);
 	}
 
 }
